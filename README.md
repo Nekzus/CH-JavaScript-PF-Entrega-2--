@@ -1,4 +1,4 @@
-# CH-JavaScript-PF-Entrega-2--
+# CH-JavaScript-PF-Entrega-2-
 Capacitaciones en CoderHouse - curso JavaScript
 
 OBJETIVOS GENERALES:
