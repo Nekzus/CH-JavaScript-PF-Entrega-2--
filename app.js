@@ -1,4 +1,4 @@
-//**** DESCRIPCIÓN DE ENTREGA ****/
+
 //** SEGUNDA ENTREGA PROYECTO FINAL **//
 
 
@@ -186,14 +186,14 @@ class Carrito {
     }
 }
 
-btnDeletAll.addEventListener("click", vaciarCarrito); // Llamado borrado de todos los items mediante click del boton en el HTML.
+btnDeletAll.addEventListener("click", vaciarCarrito); // Llamado borrado de todos los items del carrito mediante click del boton en el HTML.
 
 btnComprar.addEventListener("click", () => { // Llamado al boton de compra mediante click del boton en el HTML.
   if(carritoProductos.length !== 0) {
     confirmacion = new bootstrap.Modal(document.querySelector('#ventanaConfirmacion')); // Se asigna el mensaje de confirmacion.
     confirmacion.show(); // Se muestra el mensaje de confirmacion.
     vaciarCarrito(); // Se vacia el carrito.
-    $('#mensajes-alerta').append('<div class="alert alert-success" role="alert">Compra realizada con exito.'); // Se muestra de confirmacion compra exitosa con identificador único de transacción.
+    $('#mensajes-alerta').append('<div class="alert alert-success" role="alert">Compra realizada con exito.'); // Se muestra confirmacion de compra exitosa.
     btnAceptar.addEventListener("click", () => {
       confirmacion.hide(); // Se oculta el mensaje de confirmacion.
       
