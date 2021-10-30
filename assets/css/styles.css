@@ -11,7 +11,7 @@ body {
     font-size: 1.5rem;
 }
 #img0 {
-    width: 15rem;
+    width: 20rem;
     height: auto;
 }
 #img1 {
@@ -45,4 +45,11 @@ body {
 }
 .text-justify {
     text-align: justify;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #596679;
+}
+.modal-content{
+    background:rgb(41, 40, 40);
 }

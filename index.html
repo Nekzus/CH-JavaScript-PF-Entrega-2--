@@ -23,8 +23,9 @@
                     src="assets/img/logo-nekzus-game-store-shadow.png" alt="logo-store"></a>
 
         </div>
+        <div class="container" id="mensajes-alerta"></div>
 
-        <div class="container-fluid  top-0">
+        <div class="container-fluid  mt-3">
             <ul class="nav bg-dark nav-pills mb-3 py-3 container-fluid justify-content-center sticky-top" id="pills-tab"
                 role="tablist">
                 <li class="nav-item">
@@ -143,7 +144,23 @@
                                 Carrito</button>
                         </div>
                         <div class="col">
-                            <button type="button" id="btnDeletAll" class="btn btn-success mt-3 mb-3">Comprar</button>
+                            <button type="button" id="btnComprar" class="btn btn-success mt-3 mb-3">Comprar</button>
+                        </div>
+                        <div class="modal fade" id="ventanaConfirmacion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Gracias por su Compra.</h5>
+                                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body h6">
+                                        El sitio se encuentra en construcción, pronto sumaremos el módulo de transacciones.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button id="btnAceptar" type="button" class="btn btn-secondary">Aceptar</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -215,8 +232,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
-    <script src="assets/wow/wow.min.js"></script>
-    <script>new WOW().init();</script>
 
 </body>
 
